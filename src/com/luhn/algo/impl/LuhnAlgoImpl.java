@@ -16,7 +16,8 @@ public class LuhnAlgoImpl implements ILuhnAlgo{
 	
 	public String generateCheckDigit(String cardNumber) throws LuhnApplicationException {
 		int sum = generateLuhnAlgoSum(cardNumber, OPERATION_TYPE.GENERATE_CODE);
-		return Integer.toString(10 - sum % 10);
+		sum %= 10;
+		return Integer.toString(sum == 0 ? 0 : 10 - sum);
 	}
 	
 	public int countRange(String startRange, String endRange) throws LuhnApplicationException {

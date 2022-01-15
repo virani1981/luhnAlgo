@@ -15,6 +15,16 @@ import com.luhn.algo.interfaces.ILuhnAlgo;
  *  
  *  @see https://www.ibm.com/docs/en/order-management-sw/9.3.0?topic=cpms-handling-credit-cards
  *  @see https://en.wikipedia.org/wiki/Luhn_algorithm
+ *  
+ *  @see Verification Utility: http://tuxgraphics.org/~guido/javascript/luhn-calculator.html
+ *  @see Test C/C numbers: https://www.validcreditcardnumber.com/
+ *  
+ *  American Express	371449635398431
+ *	Diners Club			30569309025904
+ *	Discover			6011111111111117
+ *	JCB					3530111333300000
+ *	MasterCard			5555555555554444
+ *	Visa				4111111111111111  
  */
 class LuhnAlgo {
 
